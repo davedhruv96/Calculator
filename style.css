@@ -1,0 +1,10 @@
+.calculator{
+    display: grid;
+    grid-template-columns: 2vw 2vw 2vw 2vw 2vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.display{
+    grid-column: 1/6;
+}
