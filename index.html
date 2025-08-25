@@ -9,28 +9,113 @@
 </head>
 
 <body>
-    <div class="calculator">
-        <div class="display">
-            <input type="text">
+    <nav>
+        <ul>
+            <li>Calculator <span>Made with❤️</span></li>
+
+            <li>
+                <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown()">Theme</button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <button href="#" onclick="changeColor('rgb(255, 153, 0)')">Orange</button>
+                        <button href="#" onclick="changeColor('green')">Green</button>
+                        <button href="#" onclick="changeColor('rgb(206, 102, 161)')">Pink</button>
+                        <button href="#" onclick="changeColor('rgb(0, 195, 255)')">Blue</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+
+    <div class="container">
+        <div class="calculator">
+
+            <input type="" id="display">
+            <button id="seven" onclick="addToScreen('7')">7</button>
+            <button id="eight" onclick="addToScreen('8')">8</button>
+            <button id="nine" onclick="addToScreen('9')">9</button>
+            <button id="four" onclick="addToScreen('4')">4</button>
+            <button id="five" onclick="addToScreen('5')">5</button>
+            <button id="six" onclick="addToScreen('6')">6</button>
+            <button class="one" onclick="addToScreen('1')">1</button>
+            <button id="two" onclick="addToScreen('2')">2</button>
+            <button id="three" onclick="addToScreen('3')">3</button>
+            <button id="zerotwo" onclick="addToScreen('00')">00</button>
+            <button id="zero" onclick="addToScreen('0')">0</button>
+            <button id="decimal" onclick="addToScreen('.')">.</button>
+            <button id="clear" onclick="clearAll()">AC</button>
+            <button id="plus" onclick="addToScreen('+')">+</button>
+            <button id="minus" onclick="addToScreen('-')">−</button>
+            <button id="multiply" onclick="addToScreen('*')">⨉</button>
+            <button id="divide" onclick="addToScreen('/')">÷</button>
+            <button id="percentage" onclick="squareRoot()">
+        <svg fill="#000000"  viewBox="0 0 24 24" id="square-root" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line"><path id="primary" d="M3,12H4.31a1,1,0,0,1,.93.65L8,20,10.85,4.82a1,1,0,0,1,1-.82H21" style="fill: none; stroke: var(--seccondary-color); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg></button>
+            <button id="equal" onclick="calculate()">=</button>
+
         </div>
-        <button>9</button>
-        <button>8</button>
-        <button>7</button>
-        <button>6</button>
-        <button>5</button>
-        <button>4</button>
-        <button>3</button>
-        <button>2</button>
-        <button>1</button>
-        <button>0</button>
-        <button>00</button>
-        <button>+</button>
-        <button>-</button>
-        <button>*</button>
-        <button>/</button>
-        <button>%</button>
-        <button>=</button>
+        <div class="warp-flash"></div>
+
+        <!-- Speed lines for extra warp effect -->
+        <div class="speed-lines">
+            <div class="speed-line"></div>
+            <div class="speed-line"></div>
+            <div class="speed-line"></div>
+            <div class="speed-line"></div>
+            <div class="speed-line"></div>
+            <div class="speed-line"></div>
+        </div>
+
+        <!-- Star field layers -->
+        <div class="stars-container">
+            <!-- Fast/close stars (Layer 1) -->
+            <div class="star star-layer-1"></div>
+            <div class="star star-layer-1"></div>
+            <div class="star star-layer-1"></div>
+            <div class="star star-layer-1"></div>
+            <div class="star star-layer-1"></div>
+            <div class="star star-layer-1"></div>
+            <div class="star star-layer-1"></div>
+            <div class="star star-layer-1"></div>
+            <div class="star star-layer-1"></div>
+            <div class="star star-layer-1"></div>
+            <div class="star star-layer-1"></div>
+            <div class="star star-layer-1"></div>
+            <div class="star star-layer-1"></div>
+            <div class="star star-layer-1"></div>
+            <div class="star star-layer-1"></div>
+            <div class="star star-layer-1"></div>
+        </div>
+
+        <div class="stars-container">
+            <!-- Medium speed stars (Layer 2) -->
+            <div class="star star-layer-2"></div>
+            <div class="star star-layer-2"></div>
+            <div class="star star-layer-2"></div>
+            <div class="star star-layer-2"></div>
+            <div class="star star-layer-2"></div>
+            <div class="star star-layer-2"></div>
+            <div class="star star-layer-2"></div>
+            <div class="star star-layer-2"></div>
+        </div>
+
+        <div class="stars-container">
+            <!-- Slow/distant stars (Layer 3) -->
+            <div class="star star-layer-3"></div>
+            <div class="star star-layer-3"></div>
+            <div class="star star-layer-3"></div>
+            <div class="star star-layer-3"></div>
+            <div class="star star-layer-3"></div>
+            <div class="star star-layer-3"></div>
+            <div class="star star-layer-3"></div>
+            <div class="star star-layer-3"></div>
+        </div>
+
+        <!-- Cockpit frame overlay -->
+        <div class="cockpit-frame"></div>
     </div>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
