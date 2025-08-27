@@ -9,7 +9,7 @@ It supports both mouse clicks and keyboard input, with extra features like theme
 - Basic operations: ➕ Addition, ➖ Subtraction, ✖ Multiplication, ➗ Division  
 - Supports **decimal numbers**  
 - **Keyboard support** (`0-9`, `+`, `-`, `*`, `/`, `.`, `Enter`, `Backspace`, `Escape`)  
-- **Power operator**: `^` (e.g., `2^3 = 8`)  
+- **Power operator**: `^`
 - **Square root** function  
 - Handles errors gracefully (shows `Error` instead of breaking)  
 - **Theme selector** with localStorage (remembers your chosen color)  
