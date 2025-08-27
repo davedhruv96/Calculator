@@ -31,7 +31,7 @@
     <div class="container">
         <div class="calculator">
 
-            <input type="number" id="display" >
+            <input type="text" id="display" readonly>
             <button id="seven" onclick="addToScreen('7')">7</button>
             <button id="eight" onclick="addToScreen('8')">8</button>
             <button id="nine" onclick="addToScreen('9')">9</button>
@@ -41,16 +41,22 @@
             <button class="one" onclick="addToScreen('1')">1</button>
             <button id="two" onclick="addToScreen('2')">2</button>
             <button id="three" onclick="addToScreen('3')">3</button>
-            <button id="zerotwo" onclick="addToScreen('00')">00</button>
+            <button id="zerotwo" onclick="addToScreen('.')">.</button>
             <button id="zero" onclick="addToScreen('0')">0</button>
-            <button id="decimal" onclick="addToScreen('.')">.</button>
+             <button id="percentage" onclick="squareRoot()">
+            
+                        <svg fill="#000000" viewBox="0 0 24 24" id="square-root" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line">
+                    <path id="primary" d="M3,12H4.31a1,1,0,0,1,.93.65L8,20,10.85,4.82a1,1,0,0,1,1-.82H21"
+                        style="fill: none; stroke: var(--seccondary-color); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+                    </path>
+                </svg></button>
+           
             <button id="clear" onclick="clearAll()">AC</button>
             <button id="plus" onclick="addToScreen('+')">+</button>
             <button id="minus" onclick="addToScreen('-')">−</button>
-            <button id="multiply" onclick="addToScreen('*')">⨉</button>
-            <button id="divide" onclick="addToScreen('/')">÷</button>
-            <button id="percentage" onclick="squareRoot()">
-        <svg fill="#000000"  viewBox="0 0 24 24" id="square-root" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line"><path id="primary" d="M3,12H4.31a1,1,0,0,1,.93.65L8,20,10.85,4.82a1,1,0,0,1,1-.82H21" style="fill: none; stroke: var(--seccondary-color); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></svg></button>
+            <button id="multiply" onclick="addToScreen('x')">⨉</button>
+            <button id="decimal" onclick="goBack()">&#x232B</button>
+                <button id="divide" onclick="addToScreen('÷')">÷</button>
             <button id="equal" onclick="calculate()">=</button>
 
         </div>
