@@ -112,7 +112,7 @@ window.onclick = function(event) {
 }
 
 
-// Apply saved color on page load
+// Apply saved color on page load÷
 window.onload = function() {
   const savedColor = localStorage.getItem("themeColor");
   if (savedColor) {
