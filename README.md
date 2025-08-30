@@ -18,5 +18,6 @@ It supports both mouse clicks and keyboard input, with extra features like theme
 ---
 
 ## 📸 Screenshots
-![Calculator Screenshot](Screenshot 2025-08-30 092606.png)
+
+
 
